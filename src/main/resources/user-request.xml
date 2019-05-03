@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:us="http://BankMail.ws.uz/">
+    <soapenv:Header/>
+        <soapenv:Body>
+            <us:recvMail>
+                <us:name>ulug</us:name>
+            </us:recvMail>
+        </soapenv:Body>
+</soapenv:Envelope>

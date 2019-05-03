@@ -1,0 +1,39 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://BankMail.ws.uz/"
+           targetNamespace="http://BankMail.ws.uz/"
+           elementFormDefault="qualified">
+    <xs:element name="recvMail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="doc_n" type="xs:string" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="sendMail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="bank_pojo" type="tns:bank_pojo" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:complexType name="bank_pojo">
+        <xs:sequence>
+            <xs:element name="sender" type="xs:string" />
+            <xs:element name="receiver" type="xs:string" />
+            <xs:element name="mail_type" type="xs:string" />
+            <xs:element name="type_info" type="xs:string" />
+            <xs:element name="sender_id" type="xs:string" />
+            <xs:element name="sender_ts" type="xs:dateTime" />
+            <xs:element name="bankmail_id" type="xs:string" />
+            <xs:element name="bankmail_ts" type="xs:string" />
+            <xs:element name="receiver_id" type="xs:string" />
+            <xs:element name="receiver_ts" type="xs:dateTime" />
+            <xs:element name="doc_n" type="xs:string" />
+            <xs:element name="content" type="xs:string" />
+            <xs:element name="bSign" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
